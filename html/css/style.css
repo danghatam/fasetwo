@@ -35,16 +35,18 @@ header .navbar-default .navbar-nav>li>a:visited {
 header .navbar-default .navbar-nav>li>a:hover {
   color: #ffffff;
 }
-header .navbar-default .navbar-nav>li>a::after{
+.navbar-default .navbar-nav>li>a::after{
   content: "";
   left: 100%;
   top: 37%;
   position: absolute;
   height: 14px;
+}
+header .navbar-default .navbar-nav>li>a::after{
   border-left: 1px solid #dcceb8;
 }
 @media screen and (max-width: 768px){
-  header .navbar-default .navbar-nav>li>a::after{
+  .navbar-default .navbar-nav>li>a::after{
     border-left: none;
   }
 }
@@ -302,7 +304,7 @@ div.main{
   color: #4fc6e1;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 5px 0 15px;
+  margin: 0 0 15px;
 }
 .block .logo{
   text-align: center;
@@ -341,4 +343,42 @@ div.main{
   color: #797979;
   text-transform: uppercase;
   font-size: 11px;
+}
+.business-detail, .business-summary{
+  padding: 0;
+}
+.business-detail .banner img{
+  width: 100%;
+}
+.business-detail .navbar{
+  border-radius: 0;
+  background: #fff;
+}
+.business-detail .navbar-nav{
+  float: none;
+  text-align: center;
+}
+.business-detail .navbar-nav>li {
+  float: none;
+  display: inline-block;
+}
+.business-detail .navbar-nav>li.current a{
+  border-bottom: 1px solid #000;
+}
+.business-detail .navbar-nav>li a{
+  color: #000;
+}
+.business-detail .navbar-nav>li a:hover{
+  color: #df404e;
+}
+.business-detail .navbar-default .navbar-nav>li>a::after{
+  border-left: 1px solid #000;
+}
+.business-detail .navbar-default .navbar-nav>li:last-child>a::after{
+  border-left: none;
+}
+@media screen and (max-width: 768px){
+  .business-detail .navbar-nav>li {
+    display: block;
+  }
 }
