@@ -353,6 +353,7 @@ div.main{
 .business-detail .navbar{
   border-radius: 0;
   background: #fff;
+  margin-bottom: 0;
 }
 .business-detail .navbar-nav{
   float: none;
@@ -381,4 +382,22 @@ div.main{
   .business-detail .navbar-nav>li {
     display: block;
   }
+}
+.supplier-wrapper .content {
+  border: 1px solid #e1e1e1;
+  border-top: none;
+  padding: 20px 30px 30px;
+}
+.supplier-wrapper .content h3.title{
+  font-weight: 900;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin: 40px 0 30px 0;
+}
+.supplier-wrapper .content p.image {
+  text-align: center;
+}
+.supplier-wrapper .content p{
+  font-size: 14px;
+  color: #bbbbbb;
 }
