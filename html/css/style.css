@@ -386,18 +386,92 @@ div.main{
 .supplier-wrapper .content {
   border: 1px solid #e1e1e1;
   border-top: none;
+}
+.content .about, .content .clients{
   padding: 20px 30px 30px;
 }
-.supplier-wrapper .content h3.title{
+.content .about h3.title{
   font-weight: 900;
   font-size: 17px;
   text-transform: uppercase;
   margin: 40px 0 30px 0;
 }
-.supplier-wrapper .content p.image {
+.content .about p.image {
   text-align: center;
 }
-.supplier-wrapper .content p{
+.supplier-wrapper .about .content p.image img{
+  width: 80%;
+}
+.content .about p{
   font-size: 14px;
   color: #bbbbbb;
+}
+
+/** ---------- CLIENTS ----------**/
+.clients .client{
+  margin-bottom: 30px;
+}
+.client{
+  background: #f2f2f2;
+  padding: 0;
+  font-size: 13px;
+}
+.client img {
+  width: 100%;
+}
+.client .info{
+  padding: 10px;
+}
+.client .name,.client .description{
+  border-bottom: 1px solid #c7c7c7;
+  margin-bottom: 5px;
+}
+.client .name h4, .service .service-name{
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 5px 0 0;
+}
+.client .name span{
+  color: #979797;
+}
+.client .name span.year{
+  margin-right: 8px;
+}
+.client .name span.year:after{
+  content: "";
+  margin: 4px 5px 0 5px;
+  position: absolute;
+  height: 11px;
+  border-right: 1px solid #979797;
+}
+.client .description p, .service .service-description{
+  color: #979797;
+  text-align: justify;
+}
+.client .tags, .client .tags a{
+  color: #4fc6e1;
+  font-weight: 600;
+}
+/** ---------------- SERVICES ------------**/
+.services .service{
+  padding:30px 20px;
+}
+.services .service {
+  margin: 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+.service .service-name {
+  margin: 15px 0;
+}
+.feature-clients{
+  background: #353535;
+  padding: 30px;
+}
+.feature-clients .title-feature{
+  font-weight: 900;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 10px 0 30px;
 }
